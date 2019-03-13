@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+/*
+	Name: Dakota Mousseau
+	Assignment: V3
+	Date: 2/19/19
+*/
+
+/* Html Styles */
+
+html{
+	background-image: url(Laser.jpg);
+	background-size: 100% 100%;
+	height: 100%;
+}
+
+
+/* Body Styles */
+
+body{
+	width:90%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	opacity:0.97;
+	background: 
+		linear-gradient(210deg, green 50px, blue 125px, transparent 200px),
+		linear-gradient(70deg, green 12%, blue 25%, transparent 100%);
+	background-color: grey;
+}
+
+/* Flex Styles */
+/*
+	M5LO5 Demonstrate the use of flexboxes on a web page 
+	This flexbox places the article and figures on the 
+	laser tag page into a flexbox.
+*/
+main{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/* 
+	M5LO7 Demonstrate use of properties of flexbox containers
+	I used the flexbox to lay the article and figures contained 
+	within it in a row that wraps when they don't all fit.
+*/
+
+main > p{
+	flex: 0 1 10%;
+}
+/*
+	M5LO6 Demonstrate use of properties of flexbox items
+	I set the initial width of each item and made the growth 0 so the figure "bubbles"
+	don't grow out of hand. I used the shrink property however so that they could shrink to lower sizes on smaller screens.
+*/
+
+main > figure{
+	flex: 0 1 90%;
+}
+
+figure{
+	width: 100px;
+	max-width: 500px;
+	height: 200px;
+}
+
+img{
+	width: 70%;
+	height: 70%;
+}
+
+/* Image Styles */
+li > figure > img{
+	width: 175px;
+	height: 150px;
+}
+
+
+/* Table Styles */
+/*
+	M6LO7 Demonstrate how to format a table with CSS
+	I used the collective table styles to create a background seperate of the page, 
+	to create borders to seperate the cells,
+	to create an understandable, easy way to read all the prices for different number of rounds of laser tag,
+	and finally, one cell that occupies two columns to represent a discount that accomodates two different deals.
+*/
+table{
+  background: linear-gradient(74deg, green, blue, grey, transparent),
+			  linear-gradient(127deg, blue, grey, green, transparent),
+			  linear-gradient(293deg, grey, transparent, green, blue);
+  border: 5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  color: rgb(213, 213, 213);
+}
+
+th, td{
+  border: 3px solid black;
+  line-height: 1.4em;
+  padding: 8px;
+}
+
+th{
+  background-color: transparent;
+  font-weight: normal;
+}
+
+td{
+  vertical-align: top;
+}
+
+
+/* Column Styles */
+col#firstCol{
+  width: 24%;
+}
+
+col#dataCols{
+  width: 19%;
+}
+
+
+/* Table Header Styles */
+thead > tr{
+  height: 50px;
+}
+
+thead > tr:first-of-type > th:first-of-type{
+  font-size: 2em;
+}
+
+thead > tr:first-of-type > th:not(:first-of-type){
+  background: transparent;
+}

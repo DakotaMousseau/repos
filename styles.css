@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/*
+	Name: Dakota Mousseau
+	Assignment: V3
+	Date: 2/19/19
+*/
+
+/* Every element I used reset */
+body, html, div, blockquote, img, p, h1, h2, h3, h4, h5, h6, ul,
+ol, li, form, a, header, main, section, footer, p
+{
+	margin: 0; 
+	padding: 0; 
+	border: 0;
+}
+
+/* preferred styles for specific elements reset*/
+body
+{
+	font-size: 88%;
+}
+ 
+ul
+{
+	list-style-type: none;
+}
+ 
+ ol{
+	list-style-type: decimal;
+	padding-left: 20px;
+	margin-left: 10px;
+ }
+ 
+img
+{
+	border: 0;
+}
+
+/* HTML Styles */
+
+html{
+	background-color: grey;
+	height: 100%;
+	width: 100%;
+}
+
+
+/* Body Styles */
+
+body{
+	background-color: rgb(70,70,70);
+	font-size: 1em;
+	color: rgb(255,255,255);
+}	
+
+figure{
+	border-radius: 100px;
+	border-top: 10px;
+	padding-top: 10px;
+	margin-top: 15px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: grey;
+	text-shadow: red 0px 0px 10px,
+				 black 0px 0px 3px;
+	box-shadow: black 5px 5px 15px;
+}
+
+/* Image Styles */
+figure > img{
+	opacity: 0.8;
+	border-radius: 15px;
+}
+
+
+/* Paragraph Styles */
+
+main > ul > li > p::first-letter{
+	font-size: 1.5em;
+}
+
+p{
+	font-size: 1em;
+}
+
+
+/* Header Styles */
+
+
+#Top{
+	font-size: 3em;
+	color: blue;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.2);
+	text-align: center;
+	padding: 20px 0px 20px 0px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-size: 1.7em;
+}
+
+
+/* Navigation List Styles */
+a{
+	color: rgb(0,255,255);
+	text-decoration: none;
+}
+
+body > header > nav > ul a{
+	font-size: 1em;
+	background-color: grey;
+}
+
+.links{
+	color: rgb(254,255,255);
+}
+
+#Activities{
+	color: rgb(2,255,255);
+}
+
+main > a{
+	color: rgb(0,255,255);
+}
+
+body > section > h2 a{
+	font-size: 1em;
+}
+
+
+a[href]{
+	color: rgb(0,255,255);
+}
+
+a:link{
+	color: rgb(0,255,255);
+}
+
+a:hover, a:focus{
+	color: orange;
+}
+
+a:visited, a:active{
+	color: rgb(50,255,50);
+}
+
+a img::after{
+	clear:both;
+	content: "";
+	display: table;
+}
+
+a img{
+	display: block;
+	float: left;
+	width: 33.33%;
+	height: 200px;
+}
+
+#activities{
+	max-height: 400px;
+	overflow: auto;
+}
+
+/* Row Styles */
+div.row{
+	clear: both;
+}
+
+div.row::after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+ul.submenu{
+	display: none;
+}
+/*
+	M5LO4 Use CSS for pull down menus (CSS)
+	I used my activities link which still functions as a pulldown menu which reveals the names of each activity and also links
+	to each activities' individual page and hides the menu when it is not hovered over.
+*/
+a.submenuTitle:hover+ul.submenu, ul.submenu:hover{
+	display: block;
+} 
+
+/* Column Styles */ 
+
+div[class^="col-"]{
+	float: left;
+	outline: 1px solid blue;
+	padding: 0px;
+	background-color: grey;
+	text-align: center;
+}
+
+div.col-1-4{
+	width: 25%;
+}
+
+div.col-1-3{
+	width: 33.33%;
+}
+
+div.col-1-1{
+	width: 100%;
+}
+
+/*  Footer Styles */
+body > footer{
+	background-color: rgb(0,0,0);
+}
+
+/*------Media Screens Width Less Than 480px-------*/
+/* 
+	M5LO3 Use media queries to format a page differently for phones vs. PCs
+	This causes my images on my activities page to be more visible to smaller screens, and 
+	makes the site navigation links that are on every page to be visible as well.
+*/
+@media only screen and (max-width: 480px){
+a img{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 33%;
+}
+
+div[class^="col-"]{
+	width: 100%;
+	height: 25px;
+}
+}
+

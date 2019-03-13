@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link href="styles.css" rel="stylesheet" />
+	<link href="lasertagb.css" rel="stylesheet" />
+
+	<title>Laser Tag</title>
+	  <!--
+		Name: Dakota Mousseau
+		Assignment: V3
+		Date: 2/19/19
+	-->
+</head>
+
+<body>
+
+	<header>
+		<h1 id="Top" style="color: green;">Laser Tag</h1>
+		<nav>
+			<div class="row">
+				<ul>
+					<li><div class="col-1-4"><a href="index.html">Home</a></div></li>
+					<li><div class="col-1-4"><a href="about.html">About</a></div></li>
+					<li><div class="col-1-4"><a href="cite.html">Citations</a></div></li>
+					<li><div class="col-1-4"><a href="active.html" class="submenuTitle">
+						Activities</a>
+						<ul class="submenu">
+							<li><a href="Lasertag.html">Laser Tag</a></li>
+							<li><a href="#">Escape Rooms</a></li>
+							<li><a href="#">Arcade</a></li>
+							<li><a href="#">Virtual Reality</a></li>
+							<li><a href="#">Rock Wall Climbing</a></li>
+							<li><a href="#">Food and Drink</a></li>
+							<li><a href="#">Bowling</a></li>
+						</ul>
+					</div></li>										
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<p>
+			Laser tag is our most popular activity at our entertainment center! With state of the art 
+			laser tag equipment and 3 different rooms to play in, the fun never ends!
+		</p>
+		<figure>
+			<img src="NatureLaser.png" alt="Natural Laser Tag" />
+			<figcaption>First we have our nature themed laser tag arena.</figcaption>	
+		</figure>
+		<figure>
+			<img src="SpaceLaser.png" alt="Space Laser Tag" />
+			<figcaption>We also have a space themed laser tag arena.</figcaption>	
+		</figure>
+		<figure>
+			<img src="PirateLaser.jpg" alt="Pirate Laser Tag" />
+			<figcaption>And last but not least, we have a pirate themed laser tag arena.</figcaption>	
+		</figure>
+	</main>
+	
+	<!--
+		M6LO3 Demonstrate how to create a table
+		First you create the number of columns in the table,
+		and then you adds rows to expand the table downwards.
+		I used <th> for my first column data, and <td> for the 
+		data cells in the "dataCols".
+	-->
+	<table id="pricing">
+        <colgroup>
+			<col id="firstCol" /> 
+			<col id="dataCols" span="4"/>
+        </colgroup>
+        <thead> 
+            <tr>
+				<th>Pricing</th>
+				<th>1 round</th>
+				<th>2 rounds</th>
+				<th>5 rounds</th>
+				<th>10 rounds</th>
+            </tr>
+        </thead>
+		<tbody> 
+			<tr>
+				<th> Individual Players </th>
+				<td>$4.99<br />per person</td>
+				<td>$9.99<br />per person</td>
+				<td>$19.99<br />per person</td>
+				<td>$34.99<br />per person</td>
+			</tr>
+			<tr> 
+				<th>Family Packs <br/> Up to 7 players</th>
+				<td>$29.99</td>
+				<td>$59.99</td>
+				<td>$114.99</td>
+				<td>$199.99</td>
+			</tr>
+			<tr>
+				<th>Party Packs <br/> 8 or more players</th>
+				<td>$99.99</td>
+				<td>$149.99</td>
+				<td>$249.99</td>
+				<td>$399.99</td>
+			</tr>
+        </tbody>
+        <tfoot>
+            <tr> 
+				<th>Specials</th>
+				<td>5% off <br/> Wednesdays</td>
+				<td>15% off<br/>Birthday Parties</td>
+				<!-- 
+					M6LO4 Demonstrate how to span multiple rows or multiple columns in a table
+					I used the "colspan" to make the final cell in the table span two columns 
+					instead of one to make the percentage cover two deals.
+				-->
+				<td colspan="2">20% off <br/>Anniversary and With Select Deals</td>
+			</tr>
+        </tfoot>
+	</table>
+	
+</body>
+</html>
