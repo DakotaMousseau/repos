@@ -2,8 +2,8 @@
 
 /*
 	Name: Dakota Mousseau
-	Assignment: V3
-	Date: 2/19/19
+	Assignment: V4
+	Date: 3/12/19
 */
 
 /* Html Styles */
@@ -19,7 +19,6 @@ html{
 
 body{
 	width:90%;
-	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	opacity:0.97;
@@ -30,30 +29,16 @@ body{
 }
 
 /* Flex Styles */
-/*
-	M5LO5 Demonstrate the use of flexboxes on a web page 
-	This flexbox places the article and figures on the 
-	laser tag page into a flexbox.
-*/
+
 main{
 	display: flex;
 	flex-flow: row wrap;
 }
 
-/* 
-	M5LO7 Demonstrate use of properties of flexbox containers
-	I used the flexbox to lay the article and figures contained 
-	within it in a row that wraps when they don't all fit.
-*/
 
 main > p{
 	flex: 0 1 10%;
 }
-/*
-	M5LO6 Demonstrate use of properties of flexbox items
-	I set the initial width of each item and made the growth 0 so the figure "bubbles"
-	don't grow out of hand. I used the shrink property however so that they could shrink to lower sizes on smaller screens.
-*/
 
 main > figure{
 	flex: 0 1 90%;
@@ -71,20 +56,13 @@ img{
 }
 
 /* Image Styles */
-li > figure > img{
+figure > img{
 	width: 175px;
 	height: 150px;
 }
 
 
 /* Table Styles */
-/*
-	M6LO7 Demonstrate how to format a table with CSS
-	I used the collective table styles to create a background seperate of the page, 
-	to create borders to seperate the cells,
-	to create an understandable, easy way to read all the prices for different number of rounds of laser tag,
-	and finally, one cell that occupies two columns to represent a discount that accomodates two different deals.
-*/
 table{
   background: linear-gradient(74deg, green, blue, grey, transparent),
 			  linear-gradient(127deg, blue, grey, green, transparent),
@@ -92,6 +70,7 @@ table{
   border: 5px solid black;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   width: 50%;
   height: 50%;
   color: rgb(213, 213, 213);
